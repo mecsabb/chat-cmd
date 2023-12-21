@@ -8,8 +8,9 @@ import (
 )
 
 type Client struct {
-	manager *RoomManager
-	ws      *websocket.Conn
+	manager  *RoomManager
+	msgqueue chan string
+	ws       *websocket.Conn
 }
 
 var upgrader = websocket.Upgrader{

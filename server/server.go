@@ -20,5 +20,5 @@ func (s *Server) spin() {
 }
 
 func (s *Server) createRoom() {
-	// this needs to handle the response to /createRoom endpoitn
+
 }
